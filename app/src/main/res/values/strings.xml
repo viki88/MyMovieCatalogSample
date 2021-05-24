@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MyMoviesApp</string>
+    <string name="title_of_trending_movie_this_week">Title of Trending Movie this week</string>
+
+    <string-array name="media_type_strings">
+        <item>all</item>
+        <item>movie</item>
+        <item>tv</item>
+        <item>person</item>
+    </string-array>
+
+    <string-array name="time_window_strings">
+        <item>day</item>
+        <item>week</item>
+    </string-array>
+
+</resources>
