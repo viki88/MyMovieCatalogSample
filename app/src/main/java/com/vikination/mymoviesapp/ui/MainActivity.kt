@@ -1,5 +1,6 @@
 package com.vikination.mymoviesapp.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -13,6 +14,7 @@ import com.vikination.mymoviesapp.databinding.ActivityMainBinding
 import com.vikination.mymoviesapp.network.NetworkHelper
 import com.vikination.mymoviesapp.response.Movie
 import com.vikination.mymoviesapp.response.TrendingMovieResponse
+import com.vikination.mymoviesapp.ui.detailmovie.DetailMovieActivity
 import com.vikination.mymoviesapp.utils.Constants
 import retrofit2.Call
 import retrofit2.Callback
@@ -110,5 +112,8 @@ class MainActivity : AppCompatActivity(), OnClickItemListMovieListener {
     override fun onClickMovieItem(movie: Movie) {
         Toast.makeText(this, movie.title, Toast.LENGTH_SHORT).show()
 
+        val intent = Intent(this, DetailMovieActivity::class.java)
+        intent.putExtra(DetailMovieActivity.MOVIE_KEY, movie)
+        startActivity(intent)
     }
 }

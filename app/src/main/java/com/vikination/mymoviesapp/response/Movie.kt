@@ -1,8 +1,12 @@
 package com.vikination.mymoviesapp.response
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class Movie(
     var title :String,
-    var name :String,
+    var name :String?,
     var adult :Boolean,
     var backdrop_path :String,
     var id :Int,
@@ -17,4 +21,4 @@ data class Movie(
     var genre_ids : List<Int>,
     var popularity :Double,
     var media_type :String
-)
+) :Parcelable
