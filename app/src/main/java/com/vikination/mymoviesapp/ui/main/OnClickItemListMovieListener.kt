@@ -1,4 +1,4 @@
-package com.vikination.mymoviesapp.ui
+package com.vikination.mymoviesapp.ui.main
 
 import com.vikination.mymoviesapp.response.Movie
 

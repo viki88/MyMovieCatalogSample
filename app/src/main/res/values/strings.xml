@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">MyMoviesApp</string>
     <string name="title_of_trending_movie_this_week">Title of Trending Movie this week</string>
+    <string name="trending">Trending</string>
+    <string name="favorite">Favorite</string>
 
     <string-array name="media_type_strings">
         <item>all</item>
